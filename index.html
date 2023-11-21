@@ -7,6 +7,7 @@
       content="Primi passi operativi per creare un modello di pagina HTML per un post. Scopri come iniziare in modo facile."
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/style.css" />
     <title>Sviluppo di una pagina web - Blog Epicode</title>
   </head>
   <body>
@@ -16,6 +17,7 @@
         alt="logo di Epicode"
         width="300px"
         height="150px"
+        id="logo"
       />
       <h1>Epicode - Il blog dei developers</h1>
       <nav>
@@ -31,8 +33,8 @@
       <article>
         <h2>Come creare un template per i post</h2>
         <p>di Mario Rossi - pubblicato il 25-10-2020</p>
-        <hr>
-        <p>La prima cosa da fare è suddividere in blocchi logici la pagina, identificando le parti comuni da applicare a tutte le pagine.
+        <hr />
+        <!-- <p>La prima cosa da fare è suddividere in blocchi logici la pagina, identificando le parti comuni da applicare a tutte le pagine.
             Le varie aree saranno quindi suddivise in:
             <ul>
            <li>Contenuti di intestazione del tag &lt;header&gt; </li>
@@ -47,76 +49,121 @@
                     <li>Applicare gli stili CSS</li>
         </ol>
             L'applicazione di stili CSS è cresciuta negli anni fino a raggiungere la diffusione pressoché totale.
-            </p>
-            <table>
-                <tr>
-                  <th>Anno</th>
-                  <th>% di utilizzo</th>
-                  <th>Supporto browsers</th>
-                </tr>
-                <tr>
-                  <td>2000</td>
-                  <td>20%</td>
-                  <td>17%</td>
-                </tr>
-                <tr>
-                  <td>2002</td>
-                  <td>35%</td>
-                  <td>22%</td>
-                </tr>
-                <tr>
-                    <td>2004</td>
-                    <td>45%</td>
-                    <td>42%</td>
-                  </tr>
-                  <tr>
-                    <td>2008</td>
-                    <td>80%</td>
-                    <td>51%</td>
-                  </tr>
-                  <tr>
-                    <td>2012</td>
-                    <td>100%</td>
-                    <td>76%</td>
-                  </tr>
-              </table>
-              <p>Un test di validazione potrà essere fatto tramite il <a href="https://www.quizony.com/are-you-human/index.html">tool online</a> dedicato allo scopo. Una volta ottimizzato il tutto, avremo raggiunto il nostro obiettivo ed essere stati dei veri developers come loro:</p>
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/GdVPn0mQp2k?si=inKCS2oDN5Dmiwzi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </p> -->
+        <table>
+          <tr>
+            <th>Anno</th>
+            <th>% di utilizzo</th>
+            <th>Supporto browsers</th>
+          </tr>
+          <tr>
+            <td>2000</td>
+            <td>20%</td>
+            <td>17%</td>
+          </tr>
+          <tr>
+            <td>2002</td>
+            <td>35%</td>
+            <td>22%</td>
+          </tr>
+          <tr>
+            <td>2004</td>
+            <td>45%</td>
+            <td>42%</td>
+          </tr>
+          <tr>
+            <td>2008</td>
+            <td>80%</td>
+            <td>51%</td>
+          </tr>
+          <tr>
+            <td>2012</td>
+            <td>100%</td>
+            <td>76%</td>
+          </tr>
+        </table>
+        <p>
+          Un test di validazione potrà essere fatto tramite il
+          <a href="https://www.quizony.com/are-you-human/index.html"
+            >tool online</a
+          >
+          dedicato allo scopo. Una volta ottimizzato il tutto, avremo raggiunto
+          il nostro obiettivo ed essere stati dei veri developers come loro:
+        </p>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/GdVPn0mQp2k?si=inKCS2oDN5Dmiwzi"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
       </article>
       <aside>
-        <p>Vuoi rimanere aggiornato su altre novità del blog? Iscriviti alla nostra newsletter:</p>
+        <p>
+          Vuoi rimanere aggiornato su altre novità del blog? Iscriviti alla
+          nostra newsletter:
+        </p>
         <form>
-            <label for="email"></label>
-            <input type="text" id="email" name="email" placeholder="Inserisci la tua email" required><br>
-            <label for="heardAbout">Come ci hai conosciuti?</label>
-            <select id="heardAbout" name="heardAbout">
-              <option value="blog">Tramite blog di tecnologia</option>
-              <option value="newspapers">Tramite riviste di settore</option>
-              <option value="socials">Tramite social network</option>
-              <option value="recommendations">Tramite consigli di amici</option>
-            </select><br>
-            <span>Verifica di essere umano: </span><input type="checkbox" id="verify" name="verify" value="human" required>
-            <label for="verify"> Sono umano </label><br>
-            <input type="submit" value="Iscriviti!">
+          <label for="email"></label>
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="Inserisci la tua email"
+            required
+          /><br />
+          <label for="heardAbout">Come ci hai conosciuti?</label>
+          <select id="heardAbout" name="heardAbout">
+            <option value="blog">Tramite blog di tecnologia</option>
+            <option value="newspapers">Tramite riviste di settore</option>
+            <option value="socials">Tramite social network</option>
+            <option value="recommendations">
+              Tramite consigli di amici
+            </option></select
+          ><br />
+          <span>Verifica di essere umano: </span
+          ><input
+            type="checkbox"
+            id="verify"
+            name="verify"
+            value="human"
+            required
+          />
+          <label for="verify"> Sono umano </label><br />
+          <input type="submit" value="Iscriviti!" />
         </form>
         <section id="keepReading">
           <h3>Articoli correlati:</h3>
-          <div><p>Validare il codice HTML<br>
-            Categoria: develop<br>
-            Data: 18-9-2020</p></div>
-            <div><p>Correggere la sintassi<br>
-              Categoria: develop<br>
-              Data: 16-9-2020</p></div>
-              <div><p>Meno Kb nella pagina<br>
-                Categoria: ottimizzazione<br>
-                Data: 30-9-2020</p></div>
-        </section>  
+          <div>
+            <p>
+              Validare il codice HTML<br />
+              Categoria: develop<br />
+              Data: 18-9-2020
+            </p>
+          </div>
+          <div>
+            <p>
+              Correggere la sintassi<br />
+              Categoria: develop<br />
+              Data: 16-9-2020
+            </p>
+          </div>
+          <div>
+            <p>
+              Meno Kb nella pagina<br />
+              Categoria: ottimizzazione<br />
+              Data: 30-9-2020
+            </p>
+          </div>
+        </section>
       </aside>
     </main>
     <footer>
       <h5>Blog Epicode &copy; 2023</h5>
-      <p>Testata online di Mario Rossi, registrata con prot. n.213/2018 <address>Luigi Einaudi 2 - Milano.</address> P.IVA 00112233.</p>
-        <a href="mailto:info@epicode.school">info@epicode.school</a>
+      <!-- <p>Testata online di Mario Rossi, registrata con prot. n.213/2018 <address>Luigi Einaudi 2 - Milano.</address> P.IVA 00112233.</p> -->
+      <a href="mailto:info@epicode.school">info@epicode.school</a>
     </footer>
   </body>
 </html>
